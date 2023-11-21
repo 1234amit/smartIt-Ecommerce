@@ -1,0 +1,9 @@
+@extends('frontend.frontend_master')
+@section('content')
+    @include('frontend.body.categories')
+    @include('frontend.body.deal_of_week')
+    @include('frontend.body.services')
+    @include('frontend.body.top_brand_start')
+    @include('frontend.body.recently_add_product')
+    @include('frontend.body.banner')
+@endsection

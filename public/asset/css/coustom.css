@@ -1,0 +1,153 @@
+.heroSlider {
+    height: 80vh;
+}
+
+/* ============categories-icon-start======= */
+
+.categories_name {
+    opacity: 0;
+}
+.categories_box:hover .categories_name {
+    opacity: 1;
+}
+/* ============categories-icon-end======= */
+/* ===========Product-card-start======== */
+.product_card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.product_function {
+    position: absolute;
+    top: 20px;
+    right: -200px;
+    transition: 0.5s all ease;
+}
+.product_card:hover .product_function {
+    right: 20px;
+}
+/* ===========Product-card-end======== */
+/* ========service-area-start=========== */
+.serviceBr {
+    position: relative;
+}
+.serviceBr::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(
+        30deg,
+        rgba(0, 0, 0, 0) 3.51%,
+        #000 52.74%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    right: 0;
+}
+/* ========service-area-End=========== */
+/* ===================top-brand-start========= */
+.brand_line {
+    position: relative;
+}
+.brand_line::after {
+    position: absolute;
+    content: "";
+    width: 84%;
+    height: 1px;
+    background: #dae1e7;
+    left: 52%;
+    top: 22px;
+    transform: translateX(-50%);
+}
+/* ===================top-brand-end========= */
+.resent_pro_line  {
+    position: relative;
+}
+.resent_pro_line::after {
+    position: absolute;
+    content: "";
+    width:calc(100% - 150px);
+    height: 1px;
+    background: #dae1e7;
+    left: 150px;
+    top: 22px;
+    z-index: -1111;
+}
+
+  .tab-link {
+    transition: all ease 0.5s;
+    border-bottom:2px solid transparent;
+    cursor: pointer;
+}
+  .tab-link.active {
+    color: #333;
+    border-bottom:2px solid #5C6DFF;
+ }
+
+  .tab-content {
+    display: none;
+    transform: translateY(15px);
+    animation: fadeIn 0.5s ease 1 forwards; }
+
+  .tab-content.active {
+    display: block;
+}
+/* ========sell-tab========= */
+.onSaleSwiper>.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #808080 !important;
+}
+.onSaleSwiper>.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.09);
+    left: 0px !important;
+}
+
+.onSaleSwiper>.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.09);
+    right: 0px !important;
+}
+.onSaleSwiper:hover .tab-slider_btn{
+    opacity: 1;
+}
+.tab-slider_btn{
+    opacity: 0;
+    transition: .3s all ease;
+}
+/* ========sell-tab========= */
+
+
+
+/* =================Responsive=============== */
+@media (min-width: 280px) {
+    .serviceBr::after {
+        display: none;
+    }
+    .brand_line::after {
+        display: none;
+    }
+    .resent_pro_line::after{
+        display: none;
+    }
+
+}
+@media (min-width: 1024px) {
+    .serviceBr::after {
+        display: block;
+    }
+    .brand_line::after {
+        display: block;
+    }
+    .resent_pro_line::after{
+        display: block;
+    }
+}
+/* =================Responsive=============== */
